@@ -1,0 +1,516 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: var(--main-color-like-white);
+}
+/*------------------*
+# HEADER - MOBILE
+*------------------*/
+header{
+    background-color: var(--main-color-white);
+    position: absolute;
+    width: 100%;
+    display: none;
+    padding: 10px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+header .mobile-header{
+    width: 98%;
+    font-size: 1.5rem;
+    font-weight: 550;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+/*------------------*
+# ASIDE
+*------------------*/
+aside{
+    display: flex;
+    height: 100vh;
+    background-color: var(--main-color-like-white);
+}
+/*------------------*
+# SIDEBAR
+*------------------*/
+aside .sidebar{
+    background-color: var(--main-color-white);
+    flex: 1;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 380px;
+    padding: 100px 0;
+}
+aside .sidebar .sidebar-content{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/*** Sidebar top ***/
+aside .sidebar .sidebar-content .top img{
+    width: 180px;
+    border-radius: 100px;
+    border: 2px solid var(--main-color);
+}
+aside .sidebar .sidebar-content .top .name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+aside .sidebar .sidebar-content .top .fonction{
+    font-size: 1.3rem;
+    color: var(--main-color-gray);
+}
+/*** Sidebar nav ***/
+aside .sidebar .sidebar-content .nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+aside .sidebar .sidebar-content .nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+aside .sidebar .sidebar-content .nav ul li{
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 10px 0;
+    border-bottom: 0.1px solid var(--main-color-like-white);
+    cursor: pointer;
+}
+aside .sidebar .sidebar-content .nav ul li:nth-child(1){
+    border-top: 0.1px solid var(--main-color-like-white);
+}
+aside .sidebar .sidebar-content .nav ul li:hover{
+    border-right: 4px solid var(--main-color);
+    font-weight: bold;
+    color: var(--main-color);
+}
+/*** Sidebar bottom ***/
+aside .sidebar .sidebar-content .bottom{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+aside .sidebar .sidebar-content .bottom .social-icon-item{
+    background-color: var(--main-color-like-white);
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--main-color-gray);
+    border-radius: 5px;
+    cursor: pointer;
+}
+aside .sidebar .sidebar-content .bottom .social-icon-item:hover{
+    border: 1px solid var(--main-color);
+}
+aside .sidebar .sidebar-content .bottom .social-icon-item i{
+    font-size: 1.3rem;
+    line-height: 40px;
+    color: var(--main-color-gray);
+}
+aside .sidebar .sidebar-content .bottom .social-icon-item i:hover{
+    color: var(--main-color);
+}
+/*------------------*
+# PORTFOLIO CONTENT
+*------------------*/
+aside .portfolio-content{
+    background-color: var(--main-color-white);
+    flex: 3;
+    margin-left: 390px;
+}
+/*------------------*
+# CONTAINER HOME
+*------------------*/
+aside .portfolio-content .container-home{
+    background-image: url(/assets/image/home-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*------------------*
+# OVERLAY
+*------------------*/
+aside .portfolio-content .container-home .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/*------------------*
+# HOME CONTENT
+*------------------*/
+aside .portfolio-content .container-home .content{
+    position: absolute;
+    color: var(--main-color-white);
+    z-index: 2;
+    white-space: nowrap;
+}
+aside .portfolio-content .container-home .content .home-title{
+    text-align: center;
+}
+aside .portfolio-content .container-home .content .home-title .name{
+    font-size: 3.5rem;
+}
+aside .portfolio-content .container-home .content .home-title .fonctions{
+    font-size: 1.8rem;
+}
+aside .portfolio-content .container-home .content .home-title .fonctions{
+    font-size: 1.8rem;
+}
+aside .portfolio-content .container-home .content .home-infos ul{
+    padding: 0;
+}
+aside .portfolio-content .container-home .content .home-infos li{
+    list-style: none;
+    font-size: 1.7rem;
+}
+aside .portfolio-content .container-home .content .home-infos strong{
+    border-bottom: 3px solid var(--main-color);
+}
+/*----------------------*
+# CONTAINER ABOUT ME
+*-----------------------*/
+aside .portfolio-content .container-about{
+    background-color: var(--main-color-white);
+    padding-top: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+/*** About title ***/
+aside .portfolio-content .container-about .page-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+aside .portfolio-content .container-about .page-title .title{
+    padding: 5px 10px 5px 80px;
+    background-color: var(--main-color);
+    color: var(--main-color-white);
+    font-size: 1.3rem;
+}
+aside .portfolio-content .container-about .page-title p{
+    font-size: 1.2rem;
+    color: var(--main-color-gray);
+}
+/*** Content ***/
+aside .portfolio-content .container-about .content{
+    padding: 40px 80px 80px 80px;
+}
+/*** Content - about ***/
+aside .portfolio-content .container-about .content .about{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+aside .portfolio-content .container-about .content .biography{
+    flex: 1;
+}
+aside .portfolio-content .biography .bio-title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+aside .portfolio-content .biography .bio-content p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: 0;
+}
+aside .portfolio-content .container-about .content .testimony{
+    flex: 1;
+}
+aside .portfolio-content .testimony .test-title{
+    margin-bottom: 40px;
+}
+aside .portfolio-content .testimony .test-title span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-bottom: 3px solid var(--main-color);
+}
+aside .portfolio-content .testimony .testimony-content{
+    display: flex;
+    position: relative;
+}
+aside .portfolio-content .testimony .testimony-content .message{
+    border: 0.1px solid var(--main-color-gray);
+    padding: 30px 50px;
+    border-radius: 5px;
+    background-color: var(--main-color-like-white);
+    margin-left: 150px;
+}
+aside .portfolio-content .testimony .testimony-content .message p{
+    margin: 0;
+    color: var(--main-color-gray);
+    text-align: justify;
+}
+aside .portfolio-content .testimony .testimony-content .avatar{
+    z-index: 20;
+    top: 130px;
+    left: 60px;
+    position: absolute;
+}
+aside .portfolio-content .testimony .testimony-content img{
+    width: 120px;
+    border: 1px var(--main-color-gray);
+    border-radius: 100px;
+    border: 1px solid var(--main-color-gray);
+}
+aside .portfolio-content .testimony .testimony-details{
+    display: flex;
+    margin-left: 190px;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+aside .portfolio-content .testimony .testimony-details .name{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+aside .portfolio-content .testimony .testimony-details .fonction{
+    font-size: 1rem;
+    color: var(--main-color-gray);
+    font-style: italic;
+}
+aside .portfolio-content .testimony .testimony-details .scrol-icon{
+    display: flex;
+    gap: 10px;
+}
+aside .portfolio-content .testimony .testimony-details .scrol-icon .prev,
+aside .portfolio-content .testimony .testimony-details .scrol-icon .next{
+    background-color: var(--main-color-like-white);
+    margin: 0 auto;
+    border: 0.1px solid var(--main-color-gray);
+    border-radius: 5px;
+}
+aside .portfolio-content .testimony .testimony-details .scrol-icon i{
+    padding: 10px;
+}
+/*** Content - services ***/
+aside .portfolio-content .services{
+    margin-bottom: 30px;
+}
+aside .portfolio-content .services .services-title{
+    margin-bottom: 30px;
+}
+aside .portfolio-content .services .services-title span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-bottom: 3px solid var(--main-color);
+}
+aside .portfolio-content .services .services-content{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+aside .portfolio-content .services .services-content .service-item{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+aside .portfolio-content .services .services-content .service-image img{
+    width: 150px;
+}
+aside .portfolio-content .services .services-content .service-details{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+aside .portfolio-content .services .services-content .serv-title{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+aside .portfolio-content .services .services-content .serv-content{
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+/*** Content - clients ***/
+aside .portfolio-content .clients .clients-title{
+    margin-bottom: 30px;
+}
+aside .portfolio-content .clients .clients-title span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-bottom: 3px solid var(--main-color);
+}
+aside .portfolio-content .clients .clients-content{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+aside .portfolio-content .clients .clients-content img{
+    width: 130px;
+}
+/*** Content - Fun facts ***/
+aside .portfolio-content .fun-facts .fun-facts-title{
+    margin-bottom: 30px;
+}
+aside .portfolio-content .fun-facts .fun-facts-title span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-bottom: 3px solid var(--main-color);
+}
+aside .portfolio-content .fun-facts .fun-facts-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+aside .portfolio-content .fun-facts .fun-facts-content .fun-facts-item{
+    width: 150px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: var(--main-color-like-white);
+}
+aside .portfolio-content .fun-facts .fun-facts-content i{
+    font-size: 4.5rem;
+    color: var(--main-color-gray);
+}
+aside .portfolio-content .fun-facts .fun-facts-content .name{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 0;
+}
+aside .portfolio-content .fun-facts .fun-facts-content .counter{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+/*------------------*
+# RESPONSIVE
+*------------------*/
+@media screen and (max-width: 1450px){
+    aside .portfolio-content .testimony .testimony-content .message{
+        padding: 20px 40px;
+        margin-left: 100px;
+    }
+    aside .portfolio-content .testimony .testimony-content .avatar{
+        top: 130px;
+        left: 0px;
+    }
+    aside .portfolio-content .testimony .testimony-details{
+        margin-left: 130px;
+    }
+}
+@media screen and (max-width: 1300px){
+    aside .portfolio-content .container-about .page-title .title{
+        padding: 5px 10px 5px 50px;
+    }
+    aside .portfolio-content .container-about .content{
+        padding: 40px 50px 80px 50px;
+    }
+    aside .portfolio-content .testimony .testimony-content .message{
+        padding: 10px 20px;
+        margin-left: 100px;
+    }
+    aside .portfolio-content .testimony .testimony-content .avatar{
+        top: 100px;
+        left: 0px;
+    }
+    aside .portfolio-content .testimony .testimony-details .name{
+        font-size: 1rem;
+    }
+    aside .portfolio-content .testimony .testimony-details .fonction{
+        font-size: 0.7rem;
+    }
+    aside .portfolio-content .testimony .testimony-details .scrol-icon i{
+        padding: 5px;
+    }
+    
+}
+@media screen and (max-width: 1100px){
+    header{
+        display: block;
+    }
+    aside .sidebar{
+        display: none;
+    }
+    aside .portfolio-content{
+        margin-left: 0px;
+    }
+    aside .portfolio-content .testimony .testimony-content .message{
+        padding: 30px 50px;
+    }
+    aside .portfolio-content .testimony .testimony-content .avatar{
+        top: 130px;
+    }
+    aside .portfolio-content .testimony .testimony-details .name{
+        font-size: 1.3rem;
+    }
+    aside .portfolio-content .testimony .testimony-details .fonction{
+        font-size: 1rem;
+    }
+    aside .portfolio-content .testimony .testimony-details .scrol-icon i{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 900px){
+    aside .portfolio-content .container-about .content .about{
+        display: block;
+        margin-bottom: 60px;
+    }
+    aside .portfolio-content .testimony .testimony-content .avatar{
+        top: 90px;
+    }
+}
+@media screen and (max-width: 600px){
+    aside .portfolio-content .testimony .testimony-content .message{
+        padding: 20px 30px;
+    }
+    aside .portfolio-content .testimony .testimony-content .avatar{
+        top: 100px;
+        left: 20px;
+    }
+    aside .portfolio-content .testimony .testimony-content img{
+        width: 100px;
+    }
+}
+@media screen and (max-width: 500px){
+    aside .portfolio-content .testimony .testimony-content .avatar{
+        top: 130px;
+        left: 0px;
+    }
+    aside .portfolio-content .testimony .testimony-content .message{
+        padding: 20px 30px;
+        margin-left: 80px;
+    }
+    aside .portfolio-content .testimony .testimony-details .name{
+        font-size: 1rem;
+    }
+    aside .portfolio-content .testimony .testimony-details .fonction{
+        font-size: 0.7rem;
+    }
+    aside .portfolio-content .testimony .testimony-details .scrol-icon i{
+        padding: 5px;
+    }
+    aside .portfolio-content .testimony .testimony-details{
+        margin-left: 110px;
+    }
+}
